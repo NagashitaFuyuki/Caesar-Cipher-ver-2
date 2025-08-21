@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>🔐 Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Caesar Cipher</h1>
+    
+    <label for="key">Nhập key (số dịch chuyển):</label>
+    <input type="number" id="key" placeholder="Nhập số key...">
+    
+    <label for="text">Nhập văn bản:</label>
+    <input type="text" id="text" placeholder="Nhập văn bản cần mã hóa/giải mã...">
+    
+    <button onclick="encrypt()">Mã hóa</button>
+    <button onclick="decrypt()">Giải mã</button>
+
+    <div class="result-box">
+      <div class="result" id="result">👉 Kết quả sẽ hiện ở đây...</div>
+      <button class="copy-btn" onclick="copyResult()">📋 Copy</button>
+    </div>
+    <div id="details"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
